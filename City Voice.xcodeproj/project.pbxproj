@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		133CB62E242FE8C600AC6086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133CB62D242FE8C600AC6086 /* AppDelegate.swift */; };
+		133CB630242FE8C600AC6086 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133CB62F242FE8C600AC6086 /* SceneDelegate.swift */; };
+		133CB632242FE8C600AC6086 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133CB631242FE8C600AC6086 /* ViewController.swift */; };
+		133CB635242FE8C600AC6086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 133CB633242FE8C600AC6086 /* Main.storyboard */; };
+		133CB637242FE8C800AC6086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 133CB636242FE8C800AC6086 /* Assets.xcassets */; };
+		133CB63A242FE8C800AC6086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 133CB638242FE8C800AC6086 /* LaunchScreen.storyboard */; };
+		13A6D3F824314D9700696F2E /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A6D3F724314D9700696F2E /* HealthKit.framework */; };
+		13A6D411243150C300696F2E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6D410243150C300696F2E /* Notifications.swift */; };
+		13A6D4172431519E00696F2E /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A6D3FE24314E4A00696F2E /* UserNotifications.framework */; };
+		13A6D4182431519E00696F2E /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A6D40024314E4A00696F2E /* UserNotificationsUI.framework */; };
+		13A6D41B2431519E00696F2E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6D41A2431519E00696F2E /* NotificationViewController.swift */; };
+		13A6D41E2431519E00696F2E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A6D41C2431519E00696F2E /* MainInterface.storyboard */; };
+		13A6D4222431519E00696F2E /* CityVoiceNotifications.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 13A6D4162431519E00696F2E /* CityVoiceNotifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		13CE65892432870500082BF8 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CE65882432870500082BF8 /* NotificationService.swift */; };
+		13CE658D2432870500082BF8 /* CHMSVoiceNotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 13CE65862432870500082BF8 /* CHMSVoiceNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13A6D4202431519E00696F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 133CB622242FE8C600AC6086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13A6D4152431519E00696F2E;
+			remoteInfo = CityVoiceNotifications;
+		};
+		13CE658B2432870500082BF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 133CB622242FE8C600AC6086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CE65852432870500082BF8;
+			remoteInfo = CHMSVoiceNotificationService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13A6D40F24314E4A00696F2E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				13A6D4222431519E00696F2E /* CityVoiceNotifications.appex in Embed App Extensions */,
+				13CE658D2432870500082BF8 /* CHMSVoiceNotificationService.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		133CB62A242FE8C600AC6086 /* City Voice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Voice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		133CB62D242FE8C600AC6086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		133CB62F242FE8C600AC6086 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		133CB631242FE8C600AC6086 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		133CB634242FE8C600AC6086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		133CB636242FE8C800AC6086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		133CB639242FE8C800AC6086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		133CB63B242FE8C800AC6086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13A6D3F524314D8400696F2E /* City Voice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "City Voice.entitlements"; sourceTree = "<group>"; };
+		13A6D3F724314D9700696F2E /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		13A6D3FE24314E4A00696F2E /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		13A6D40024314E4A00696F2E /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		13A6D410243150C300696F2E /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		13A6D4162431519E00696F2E /* CityVoiceNotifications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CityVoiceNotifications.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A6D41A2431519E00696F2E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		13A6D41D2431519E00696F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		13A6D41F2431519E00696F2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CE65862432870500082BF8 /* CHMSVoiceNotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CHMSVoiceNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		13CE65882432870500082BF8 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		13CE658A2432870500082BF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		133CB627242FE8C600AC6086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A6D3F824314D9700696F2E /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A6D4132431519E00696F2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A6D4182431519E00696F2E /* UserNotificationsUI.framework in Frameworks */,
+				13A6D4172431519E00696F2E /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CE65832432870500082BF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		133CB621242FE8C600AC6086 = {
+			isa = PBXGroup;
+			children = (
+				133CB62C242FE8C600AC6086 /* City Voice */,
+				13A6D4192431519E00696F2E /* CityVoiceNotifications */,
+				13CE65872432870500082BF8 /* CHMSVoiceNotificationService */,
+				133CB62B242FE8C600AC6086 /* Products */,
+				13A6D3F624314D9700696F2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		133CB62B242FE8C600AC6086 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				133CB62A242FE8C600AC6086 /* City Voice.app */,
+				13A6D4162431519E00696F2E /* CityVoiceNotifications.appex */,
+				13CE65862432870500082BF8 /* CHMSVoiceNotificationService.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		133CB62C242FE8C600AC6086 /* City Voice */ = {
+			isa = PBXGroup;
+			children = (
+				13A6D3F524314D8400696F2E /* City Voice.entitlements */,
+				133CB62D242FE8C600AC6086 /* AppDelegate.swift */,
+				133CB62F242FE8C600AC6086 /* SceneDelegate.swift */,
+				133CB631242FE8C600AC6086 /* ViewController.swift */,
+				133CB633242FE8C600AC6086 /* Main.storyboard */,
+				133CB636242FE8C800AC6086 /* Assets.xcassets */,
+				133CB638242FE8C800AC6086 /* LaunchScreen.storyboard */,
+				133CB63B242FE8C800AC6086 /* Info.plist */,
+				13A6D410243150C300696F2E /* Notifications.swift */,
+			);
+			path = "City Voice";
+			sourceTree = "<group>";
+		};
+		13A6D3F624314D9700696F2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13A6D3F724314D9700696F2E /* HealthKit.framework */,
+				13A6D3FE24314E4A00696F2E /* UserNotifications.framework */,
+				13A6D40024314E4A00696F2E /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13A6D4192431519E00696F2E /* CityVoiceNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				13A6D41A2431519E00696F2E /* NotificationViewController.swift */,
+				13A6D41C2431519E00696F2E /* MainInterface.storyboard */,
+				13A6D41F2431519E00696F2E /* Info.plist */,
+			);
+			path = CityVoiceNotifications;
+			sourceTree = "<group>";
+		};
+		13CE65872432870500082BF8 /* CHMSVoiceNotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				13CE65882432870500082BF8 /* NotificationService.swift */,
+				13CE658A2432870500082BF8 /* Info.plist */,
+			);
+			path = CHMSVoiceNotificationService;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		133CB629242FE8C600AC6086 /* City Voice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 133CB63E242FE8C800AC6086 /* Build configuration list for PBXNativeTarget "City Voice" */;
+			buildPhases = (
+				133CB626242FE8C600AC6086 /* Sources */,
+				133CB627242FE8C600AC6086 /* Frameworks */,
+				133CB628242FE8C600AC6086 /* Resources */,
+				13A6D40F24314E4A00696F2E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13A6D4212431519E00696F2E /* PBXTargetDependency */,
+				13CE658C2432870500082BF8 /* PBXTargetDependency */,
+			);
+			name = "City Voice";
+			productName = "City Voice";
+			productReference = 133CB62A242FE8C600AC6086 /* City Voice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13A6D4152431519E00696F2E /* CityVoiceNotifications */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13A6D4232431519F00696F2E /* Build configuration list for PBXNativeTarget "CityVoiceNotifications" */;
+			buildPhases = (
+				13A6D4122431519E00696F2E /* Sources */,
+				13A6D4132431519E00696F2E /* Frameworks */,
+				13A6D4142431519E00696F2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CityVoiceNotifications;
+			productName = CityVoiceNotifications;
+			productReference = 13A6D4162431519E00696F2E /* CityVoiceNotifications.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		13CE65852432870500082BF8 /* CHMSVoiceNotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13CE65902432870500082BF8 /* Build configuration list for PBXNativeTarget "CHMSVoiceNotificationService" */;
+			buildPhases = (
+				13CE65822432870500082BF8 /* Sources */,
+				13CE65832432870500082BF8 /* Frameworks */,
+				13CE65842432870500082BF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CHMSVoiceNotificationService;
+			productName = CHMSVoiceNotificationService;
+			productReference = 13CE65862432870500082BF8 /* CHMSVoiceNotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		133CB622242FE8C600AC6086 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "The City Voice";
+				TargetAttributes = {
+					133CB629242FE8C600AC6086 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					13A6D4152431519E00696F2E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					13CE65852432870500082BF8 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 133CB625242FE8C600AC6086 /* Build configuration list for PBXProject "City Voice" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 133CB621242FE8C600AC6086;
+			productRefGroup = 133CB62B242FE8C600AC6086 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				133CB629242FE8C600AC6086 /* City Voice */,
+				13A6D4152431519E00696F2E /* CityVoiceNotifications */,
+				13CE65852432870500082BF8 /* CHMSVoiceNotificationService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		133CB628242FE8C600AC6086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133CB63A242FE8C800AC6086 /* LaunchScreen.storyboard in Resources */,
+				133CB637242FE8C800AC6086 /* Assets.xcassets in Resources */,
+				133CB635242FE8C600AC6086 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A6D4142431519E00696F2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A6D41E2431519E00696F2E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CE65842432870500082BF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		133CB626242FE8C600AC6086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A6D411243150C300696F2E /* Notifications.swift in Sources */,
+				133CB632242FE8C600AC6086 /* ViewController.swift in Sources */,
+				133CB62E242FE8C600AC6086 /* AppDelegate.swift in Sources */,
+				133CB630242FE8C600AC6086 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A6D4122431519E00696F2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A6D41B2431519E00696F2E /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CE65822432870500082BF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CE65892432870500082BF8 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13A6D4212431519E00696F2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13A6D4152431519E00696F2E /* CityVoiceNotifications */;
+			targetProxy = 13A6D4202431519E00696F2E /* PBXContainerItemProxy */;
+		};
+		13CE658C2432870500082BF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CE65852432870500082BF8 /* CHMSVoiceNotificationService */;
+			targetProxy = 13CE658B2432870500082BF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		133CB633242FE8C600AC6086 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				133CB634242FE8C600AC6086 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		133CB638242FE8C800AC6086 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				133CB639242FE8C800AC6086 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		13A6D41C2431519E00696F2E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13A6D41D2431519E00696F2E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		133CB63C242FE8C800AC6086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		133CB63D242FE8C800AC6086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		133CB63F242FE8C800AC6086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "City Voice/City Voice.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LYG3RUDJ8;
+				INFOPLIST_FILE = "City Voice/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CHMSVoicePush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		133CB640242FE8C800AC6086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "City Voice/City Voice.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LYG3RUDJ8;
+				INFOPLIST_FILE = "City Voice/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CHMSVoicePush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		13A6D4242431519F00696F2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LYG3RUDJ8;
+				INFOPLIST_FILE = CityVoiceNotifications/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CHMSVoicePush.CityVoiceNotifications;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13A6D4252431519F00696F2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LYG3RUDJ8;
+				INFOPLIST_FILE = CityVoiceNotifications/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CHMSVoicePush.CityVoiceNotifications;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		13CE658E2432870500082BF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LYG3RUDJ8;
+				INFOPLIST_FILE = CHMSVoiceNotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CHMSVoicePush.CHMSVoiceNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13CE658F2432870500082BF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LYG3RUDJ8;
+				INFOPLIST_FILE = CHMSVoiceNotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CHMSVoicePush.CHMSVoiceNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		133CB625242FE8C600AC6086 /* Build configuration list for PBXProject "City Voice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				133CB63C242FE8C800AC6086 /* Debug */,
+				133CB63D242FE8C800AC6086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		133CB63E242FE8C800AC6086 /* Build configuration list for PBXNativeTarget "City Voice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				133CB63F242FE8C800AC6086 /* Debug */,
+				133CB640242FE8C800AC6086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13A6D4232431519F00696F2E /* Build configuration list for PBXNativeTarget "CityVoiceNotifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A6D4242431519F00696F2E /* Debug */,
+				13A6D4252431519F00696F2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13CE65902432870500082BF8 /* Build configuration list for PBXNativeTarget "CHMSVoiceNotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CE658E2432870500082BF8 /* Debug */,
+				13CE658F2432870500082BF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 133CB622242FE8C600AC6086 /* Project object */;
+}
